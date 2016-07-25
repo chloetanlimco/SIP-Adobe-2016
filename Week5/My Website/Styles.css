@@ -1,0 +1,29 @@
+body{
+    background-color: #e5ccff;
+}
+
+.columns{
+    display.inline_block;
+}
+
+.images{
+    display.block;
+    padding: 30px;
+}
+
+.heading{
+    display.inline_block;
+    white-space:nowrap;
+
+}
+
+h1{
+    color: red;
+    font:  80px 'Oleo Script', Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+div{
+    margin: 30px;
+}
