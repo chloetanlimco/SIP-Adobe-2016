@@ -54,6 +54,19 @@ p{
     text-align: center;
     margin-top: 30px;
 }
+
+#BlockTextRight{
+    margin-left: 400px;
+    text-align: center;
+    margin-top: 30px;
+}
+#BlockTextLeft{
+    margin-left: 0px;
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 200px;
+    width: 775px;
+}
 .TitleText {  
     position: absolute;
     top: 35%; 
@@ -89,10 +102,15 @@ p{
     width: 33px;
     margin: 20px;
 }
-.Descriptions2{
+.SpecificProject{
     display:inline;
     margin-top: 50px;
     padding: 30px;
+    padding-top: 60px;
+}
+
+#Left{
+    margin-left: 550px;
 }
 /*slideshow */
 
