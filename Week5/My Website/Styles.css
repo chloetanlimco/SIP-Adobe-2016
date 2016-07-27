@@ -41,18 +41,31 @@ li a:hover {
     background-color: #111;
 }
 
-h2 {  
-    position:absolute;
-    top: 220px; 
+p{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    font: 20px "Palatino Linotype", Palatino, serif;
+}
+
+#BlockText{
+    margin-left: 200px;
+    text-align: center;
+    margin-top: 30px;
+}
+.TitleText {  
+    position: absolute;
+    top: 35%; 
     left: 0; 
     width: 100%; 
     color: red;
-    font:  80px 'Oleo Script', Helvetica, sans-serif;
+    font:  300% 'Oleo Script', Helvetica, sans-serif;
     padding: 0;
     text-shadow: 2px 2px #0d0d0d;
 }
 .active{
-        z-index:99;
+    z-index:99;
 }
 
 .TopScroller{
@@ -69,14 +82,74 @@ h2 {
     font: 20px "Palatino Linotype", Palatino, serif;
 
 }
+.Descriptions{
+    display: inline;
+    margin-top: 40px;
+    padding: 30px;
+    width: 33px;
+    margin: 20px;
+}
+.Descriptions2{
+    display:inline;
+    margin-top: 50px;
+    padding: 30px;
+}
+/*slideshow */
 
-.Columns{
-    display.inline_block;
+.slideshow-container {
+    position: relative;
 }
 
-#Column1{
-    padding-left: 30px;
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
 }
-#Column2{
-    margin: 130px;
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
 }

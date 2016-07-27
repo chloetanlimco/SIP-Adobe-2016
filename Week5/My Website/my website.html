@@ -15,27 +15,77 @@
         <ul>
             <li><img src = "images\gwclogo.png" height = 45px/>
             <li><a href="default.asp">Home</a></li>
-            <li><a href="news.asp">News</a></li>
-            <li><a href="contact.asp">Contact</a></li>
             <li><a href="about.asp">About</a></li>
+            <li><a href="scratch.asp">Scratch</a></li>
+            <li><a href="python.asp">Python</a></li>
+            <li><a href="robotics.asp">Robotics</a></li>
         </ul>
-        <div class = "TopScroller">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="images/GroupPhoto.jpg" width=100%>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="images/Pinterest.jpg" width=100%>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="images/BrickWall.jpg" width=100%>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/Meera.jpg" width=100%>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+        
+<!--         <div class = "TopScroller">
             <img src = "images/GroupPhoto.jpg" width = 100%; padding = 0; margin = 0/>
-        </div>
-        <center><h2> Adobe SIP 2016 </h2></center>
+            <div class = "TitleText">
+                <center><h2> Adobe SIP 2016 </h2></center>
+            </div>
+        </div>    
+ -->
         <div class = "TitleBar">
-            <center><h3>Projects</h3> </center>
+            <center><h3>About</h3> </center>
         </div>
-        <div>
-            <img src = "images\JukeboxScratch.png" height = "300"/>
+        <p> Here at the Summer Immersion Program at the Adobe San Francisco Office, we learn how to code through creating projects, including video games, art/animation, robotics, and websites. Each week has a different focus, and as we build up our knowledge of syntax of the different languages, we better our understanding of the basic components of code (e.g. loops, conditionals, lists, classes) and get to challenge our abilities. We have heard talks by several Adobe employees, including Emmy Huang, Divya Prabhakar, and Emilio Gambaretto, as well as others from various startups and companies, including Anna Killgore, Lucia Greco, and Albert Treat. </p>
+
+        
+        <div class = "TitleBar">
+            <center><h3>Scratch</h3> </center>
         </div>
-        <div id = "Column 1">
-            <h4> Title</h4>
-            <p> Text </p>
+
+        <div class = "Descriptions">
+            <span><img src = "images/ScratchSprite.png" height = 200px; padding-left = 40px; style = "float: left"/></span>
+            <span><p id = "BlockText"> Scratch is a Harvard-developed programming language. Block-based, it introduces basic programming "blocks" and components, including variables, lists, loops, and conditionals. </p></span>
+            
         </div>
-        <div id = "Column 2">
-            <h4> Title2 </h4>
-            <p> Text2 </p> 
+        <div class = "Descriptions2">
+            <img src = "images/JukeboxScratch.png" height = 200px; padding-left = 0; margin-left = 0/>
+            <img src = "images/Defaultpic.jpg" height = 200px />
+            <img src = "images/Defaultpic.jpg" height = 200px/>
         </div>
+        
+        <div class = "TitleBar">
+            <center><h3>Python</h3> </center>
+        </div>
+        
+        <div class = "TitleBar">
+            <center><h3>Robotics</h3> </center>
+        </div>
+        
+
     </body>
 </html>

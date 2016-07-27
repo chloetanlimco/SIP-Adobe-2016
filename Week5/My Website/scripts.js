@@ -1,30 +1,48 @@
-var myPhotos = ["images/GroupPhoto.jpg", "images/Pinterest.jpg"]
-// , "images/BrickWall.jpg", "images/Mariette.jpg"
-
+var slideIndex = 1;
 window.onload = function(){
-    $(".TopScroller").on('click', changePhoto);
-    console.log("clicked")
+    showSlides(slideIndex);
 }
 
-function changePhoto(element, newPath){
-    // var image = $(".TopScroller").children()[0];
-    // var path = "images/Pinterest.jpg"
-    // image.src = path;
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
 
-    if (image.src == myPhotos[0]){
-        var path = myPhotos[1];
-        image.src = path;
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
     }
-    // if (image.src == myPhotos[1]){
-    //     var path = myPhotos[2];
-    //     image.src = path;
-    // }
-    // if (image.src == myPhotos[2]){
-    //     var path = myPhotos[3];
-    //     image.src = path;
-    // }
-    // if (image.src == myPhotos[3]){
-    //     var path = myPhotos[0];
-    //     image.src = path;
-    // }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block"; 
+    dots[slideIndex-1].className += " active";
 }
+
+
+
+
+// var i = 0;
+
+// var myPhotos = ["images/GroupPhoto.jpg", "images/Pinterest.jpg", "images/BrickWall.jpg", "images/Mariette.jpg"];
+
+// window.onload = function(){
+//     $(".TopScroller").on('click', changePhoto);
+//     console.log("clicked");
+// }
+// function changePhoto(element, newPath){
+//     var image = $(".TopScroller").children()[0];
+//     var path = myPhotos[i];
+//     image.src = path;
+//     i++;
+//     if (i == 4){
+//         i = 0;
+// }
