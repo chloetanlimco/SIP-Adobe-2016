@@ -7,7 +7,7 @@
         height: 400px;
       }
     </style>
-    <meta name = "viewport" content = "initial-scale=1.0, user-scalable = no"
+    <meta name = "viewport" content = "initial-scale=1.0, user-scalable = no">
     <meta charset = "utf-8">
     <style>
       html, body{
@@ -21,27 +21,42 @@
     <h3>My Google Maps Demo</h3>
     <div id="map"></div>
     <script>
+    var SJCimage = {
+      url: "images/NewPin.png", 
+      scaledSize: new google.maps.Size(30,50)
+    };
+    var locations = [
+      ['SJC', 37.324485, -122.030290, SJCimage],
+      ['SI', 37.7482, 122.4958, 2],
+      ['Batangas', 14.5995, 120.9842, 3],
+    ];
       function initMap() {
         var mapDiv = document.getElementById('map');
-        var image = {url: "images/NewPin.png", scaledSize: new google.maps.Size(30,50)};
         var map = new google.maps.Map(mapDiv, {
             center: {lat: 37.324485, lng: -122.030290},
             zoom: 15,
             mapTypeId: 'hybrid'
         });
+
         var contentString = '<div id = "content>' + '<div id = "siteNotice">' + '</div>' + '<h1 id = "firstHeading" class = "first Heading" > SJC </h1>' + '<div id = "bodyContent">' + '<p><b>  Saint Joseph of Cupertino </b>, most commonly called <b>SJC</b>, is a school near the heart of Cupertino.</p>' + '</div>' + '</div>';
         var infowindow = new google.maps.InfoWindow({
-          content:contentString
+          content:contentString,
         });
-        var marker = new google.maps.Marker({
-          position: {lat: 37.324485, lng: -122.030290},
-          map: map,
-          icon: image,
-          title: "SJC"
-        });
-        marker.addListener('click', function(){
-          infowindow.open(map,marker);
-        });
+        
+        for (var i = 0; i < locations.length; i++) {  
+          var marker = new google.maps.Marker({
+            icon: SJCimage,
+            title: locations[i][0],
+          });
+          var information = new google.maps.Infowindow({
+            position: {lat: locations[i][1], lng: locations[i][2]},
+            content: contentString,
+          });
+          marker.setMap(map);
+          google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map,marker);
+          });
+        }
       }
     </script>
     <script async defer
