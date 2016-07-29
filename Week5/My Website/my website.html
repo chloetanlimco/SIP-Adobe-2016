@@ -9,29 +9,29 @@
     </head>
     <body>
         <ul>
-            <li><img src = "images\gwclogo.png" height = 45px/>
-            <li><a href="default.asp">Home</a></li>
-            <li><a href="about.asp">About</a></li>
-            <li><a href="scratch.asp">Scratch</a></li>
-            <li><a href="python.asp">Python</a></li>
-            <li><a href="robotics.asp">Robotics</a></li>
+            <li><img src = "images\gwclogo.png" id = "logo"/>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Scratch">Scratch</a></li>
+            <li><a href="#Python">Python</a></li>
+            <li><a href="#Robotics">Robotics</a></li>
         </ul>
         <div class="slideshow-container">
-            <div class="mySlides fade">
+            <div class="mySlides">
                 <div class="numbertext">1 / 4</div>
-                <img src="images/GroupPhoto.jpg" width=100%>
+                <img src="images/GroupPhoto.jpg" class = "slideshowimages">
             </div>
-            <div class="mySlides fade">
+            <div class="mySlides">
                 <div class="numbertext">2 / 4</div>
-                <img src="images/Pinterest.jpg" width=100%>
+                <img src="images/Pinterest.jpg" class = "slideshowimages">
             </div>
-            <div class="mySlides fade">
+            <div class="mySlides">
                 <div class="numbertext">3 / 4</div>
-                <img src="images/BrickWall.jpg" width=100%>
+                <img src="images/BrickWall.jpg" class = "slideshowimages">
             </div>
-            <div class="mySlides fade">
+            <div class="mySlides">
                 <div class="numbertext">4 / 4</div>
-                <img src="images/Meera.jpg" width=100%>
+                <img src="images/Meera.jpg" class = "slideshowimages">
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -46,46 +46,57 @@
           <span class="dot" onclick="currentSlide(4)"></span> 
         </div>
         
-<!--         <div class = "TopScroller">
-            <img src = "images/GroupPhoto.jpg" width = 100%; padding = 0; margin = 0/>
-            <div class = "TitleText">
-                <center><h2> Adobe SIP 2016 </h2></center>
-            </div>
-        </div>    
- -->
-        <div class = "TitleBar">
-            <center><h3>About</h3> </center>
+        <div class = "TitleBar" id = "About">
+            <h3>About</h3>
         </div>
         <p> Here at the Summer Immersion Program at the Adobe San Francisco Office, we learn how to code through creating projects, including video games, art/animation, robotics, and websites. Each week has a different focus, and as we build up our knowledge of syntax of the different languages, we better our understanding of the basic components of code (e.g. loops, conditionals, lists, classes) and get to challenge our abilities. We have heard talks by several Adobe employees, including Emmy Huang, Divya Prabhakar, and Emilio Gambaretto, as well as others from various startups and companies, including Anna Killgore, Lucia Greco, and Albert Treat. </p>
 
         
-        <div class = "TitleBar">
-            <center><h3>Scratch</h3> </center>
+        <div class = "TitleBar" id = "Scratch">
+            <h3>Scratch</h3>
         </div>
 
         <div class = "Descriptions">
-            <img src = "images/ScratchSprite.png" height = 200px; padding-left = 40px; style = "float: left"/>
+            <img src = "images/ScratchSprite.png" id = "Sprite" />
             <p id = "BlockText"> Scratch is a Harvard-developed programming language. Block-based, it introduces basic programming "blocks" and components, including variables, lists, loops, and conditionals. </p>
-            
         </div>
+
+        <div class = "space">
+        </div>
+
         <div class = "SpecificProject" id = "Left">
-            <img src = "images/pig.png" height = 300px; padding-left = 300px; style = "float: right"/>
+            <img src = "images/pig.png" id = "Pig"/>
             <p id = "BlockTextLeft"> One of our first major projects in Scratch was Pig, where two players take turns rolling the dice. When a 1 is rolled, the turn passes to the next player. The first person to score 100 or more points wins. 
             In this project, we used multiple sprites and many variables to keep track of the number rolled, the total for one turn, and the total score for each player. We used a random number generator to simulate the random rolling of the dice. </p>
         </div>
 
-        <div class = "SpecificProject" id = "Right">
-            <img src = "images/JukeboxScratch.png" height = 300px; style = "float: left"/>
-            <p id = "BlockTextRight"> The last Scratch project was the Jukebox, which played a song from a specific set of songs. We imported mp3 songs to each sprite so that when the sprite (a button with the song title on it) is clicked, it plays the song. My partner Lily and I also created a feature where a </p>
+        <div class = "space">
         </div>
 
-        <div class = "TitleBar">
-            <center><h3>Python</h3> </center>
+        <div class = "SpecificProject" id = "Right">
+            <img src = "images/JukeboxScratch.png" id = "Jukebox"/>
+            <p id = "BlockTextRight"> The last Scratch project was the Jukebox, which played a song from a specific set. We imported mp3 files to each sprite so that when the sprite (a button with the song title on it) is clicked, it plays the song. My partner Lily and I also created a feature where a user could create their own playlist. When they click the sprite "Create Playlist," and then select the songs in the order they want, it adds it to a playlist list. Once they click play, the songs will then play in that order. We also made a shuffle, where it would generate a random playlist and play it indefinitely. </p>
+        </div>
+
+         <div class = "space2">
+        </div>
+
+        <div class = "TitleBar" id = "Python">
+            <h3>Python</h3>
+        </div>
+        <div class = "Descriptions">
+            <img src = "images/PythonLogo.png" id = "PythonIcon" />
+            <p id = "BlockText"> Python was our first foray into actual programming complete with syntax and functions. The first week, we focused on mastering functions and lists in Python, and the second week, we used Pygame, a library with more functions suited towards creating games. </p>
         </div>
         
-        <div class = "TitleBar">
-            <center><h3>Robotics</h3> </center>
+        <div class = "TitleBar" id = "Robotics">
+            <h3>Robotics</h3>
         </div>
+        <div class = "Descriptions">
+            <img src = "images/Parallax.jpg" id = "Parallax" />
+            <p id = "BlockText"> In our Robotics unit, we used a Parallax Uno bot connected to an Arduino board. Throughout the week, we experimented with circuits, Piezo elements, and touch sensors (whiskers) and used C++ to code in Arduino. Projects included the using LEDs to flash lights in time to a popular song, using a Piezo element to play a song using tones and frequencies, making the robot dance to a specific song, and using a touch sensor to enable the bot to self-navigate out of a three-walled room. </p>
+        </div>
+
         
 
     </body>

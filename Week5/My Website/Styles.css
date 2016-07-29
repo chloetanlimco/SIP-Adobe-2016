@@ -2,6 +2,9 @@ body{
     background-color: #e5ccff;
 }
 
+#logo{
+    height:45px;
+}
 .columns{
     display.inline_block;
 }
@@ -41,6 +44,9 @@ li a:hover {
     background-color: #111;
 }
 
+.slideshowimages{
+    width: 100%;
+}
 p{
     padding-left: 40px;
     padding-right: 40px;
@@ -50,22 +56,25 @@ p{
 }
 
 #BlockText{
-    margin-left: 200px;
     text-align: center;
-    margin-top: 30px;
+    /*margin-top: 0px;*/
 }
 
 #BlockTextRight{
-    margin-left: 400px;
+    margin-left: 40%;
     text-align: center;
-    margin-top: 30px;
+    padding-top: 20px;
+    margin-top: 0px;
 }
 #BlockTextLeft{
     margin-left: 0px;
     text-align: center;
-    margin-top: 30px;
-    margin-right: 200px;
-    width: 775px;
+    margin-right: 0px;
+    width:50%;
+}
+#Jukebox{
+    width: 40%;
+    float: left;
 }
 .TitleText {  
     position: absolute;
@@ -76,6 +85,13 @@ p{
     font:  300% 'Oleo Script', Helvetica, sans-serif;
     padding: 0;
     text-shadow: 2px 2px #0d0d0d;
+}
+.space{
+    margin: 4%;
+}
+
+.space2{
+    margin:5%;
 }
 .active{
     z-index:99;
@@ -93,6 +109,7 @@ p{
     padding: 0.5px;
     margin: 0px;
     font: 20px "Palatino Linotype", Palatino, serif;
+    text-align: center;
 
 }
 .Descriptions{
@@ -102,6 +119,32 @@ p{
     width: 33px;
     margin: 20px;
 }
+#Sprite{
+    height: 200px; 
+    padding-left: 40px;
+    float: left;
+}
+#Pig{
+    width: 40%; 
+    padding-left: 0px; 
+    float: right
+}
+
+#Parallax{
+    padding-top: 30px;
+    height: 300px;
+    padding-left: 20px;
+    float:left;
+    padding-right: 40px;
+}
+#PythonIcon{
+    padding-top: 30px;
+    float:left;
+    height: 100px;
+    padding-left: 30px;
+    padding-top: 50px;
+
+}
 .SpecificProject{
     display:inline;
     margin-top: 50px;
@@ -110,14 +153,21 @@ p{
 }
 
 #Left{
-    margin-left: 550px;
+    margin-left: 40px;
+}
+
+.Right{
+    margin-left: 40px;
+    margin-top: 100px;
 }
 /*slideshow */
 
 .slideshow-container {
     position: relative;
 }
-
+.mySlides{
+    width: 100%;
+}
 .prev, .next {
     cursor: pointer;
     position: absolute;
